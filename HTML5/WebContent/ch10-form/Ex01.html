@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset>
+		<legend>Text Field Test</legend>
+		<form method="post" name="formdata" action="http://naver.com">
+			<p>text field</p>
+			Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"
+				name="member_name" /><br> Nick Name : <input type="text"
+				name="member_nickname" value="lastkiss" /><br> Password : <input
+				type="password" name="password" /> <br>
+			<p>
+				Text Area :
+				<textarea rows="5" cols="30" name="contents" valign="top">기본적으로 표시되는 내용...</textarea>
+			</p>
+			Select Box : <select name="position" required="false">
+				<option value="">Select Position</option>
+				<option value="intern">Intern</option>
+				<optgroup label="Senior" disabled="true">
+					<option value="manager">Manager</option>
+					<option value="vp">Vice President</option>
+				</optgroup>
+			</select>
+
+			<p>
+				Radio Button : <input style="margin-left: 20px" type="radio"
+					name="chk_info" value="C" checked="checked">: C <input
+					style="margin-left: 20px" type="radio" name="chk_info" value="HTML">:
+				HTML <input leftmargin="20px" type="radio" name="chk_info"
+					value="JAVA">: JAVA
+			</p>
+			<p>
+				Checkbox : <input style="margin-left: 20px" type="checkbox"
+					name="chk_info" value="C" checked="checked">: C <input
+					style="margin-left: 20px" type="checkbox" name="chk_info"
+					value="HTML" checked="checked">: HTML <input
+					leftmargin="20px" type="checkbox" name="chk_info" value="JAVA">:
+				JAVA
+			</p>
+
+			<p>
+				Reset Button : <input type="reset" value="reset">
+			<p>
+				Submit Button : <input type="submit" value="Submit">
+			<p>
+				image button <input type="image" src="submit.jpg" width="150px">
+		</form>
+
+		<form enctype="multipart/form-data" method="post" name="formdata"
+			action="http://naver.com">
+			<p>
+				Select File : <input type="file" name="filename">
+		</form>
+		<form autocomplete="on">
+			<p> hidden field
+			<input type="hidden" name="UserIP" value="<$REMOTE_ADDR>">
+			<label for="c">C Language</label>
+			
+			<input type="checkbox" name="checkinfo" id="c">
+			e-mail : <input type="email" name="email" autocomplete="off">
+		</form>
+		
+	</fieldset>
+</body>
+</html>
