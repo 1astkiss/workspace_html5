@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.box_a {
+	background-color: blue;
+	color: white;
+}
+
+.box_a:hover {
+	background-color: red;
+}
+
+div>span:hover {
+	background-color: aqua;
+	color: chocolate;
+}
+
+div[height], [width]:hover{
+background-color:orange;
+}
+</style>
+</head>
+<body>
+
+	<div class="box_a" height="auto">마우스를 올려보아요.</div>
+	<br>
+	<div id="box_b" width="auto">
+		<span>span태그안에서만 적용됩니다.</span>span태그 밖에는 미적용
+	</div>
+	<br>
+	<span width="auto">span태그 안</span>span태그 밖
+	<br>
+	<span height="auto">span태그 안</span>span태그 밖
+
+</body>
+</html>
