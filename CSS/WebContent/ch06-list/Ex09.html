@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div, ul, li{
+	margin: 0;
+	padding: 0;
+}
+
+#menuBar{
+	float: right;
+	margin: 0px 5px 3px 5px;
+	padding: 0 0 3px 0;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+	/* -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, .3); */
+	border-radius: 3px;
+	background-color: #5c5c5c;
+}
+
+#menuBar ul li{
+	float: left;
+	list-style-type:none;
+}
+
+#menuBar a{
+	height: 16px;
+	color: #f1f1f1;
+	font-family: arial;
+	font-size: 12px;
+	padding: 0 10px 0 10px;
+	text-decoration: none;
+}
+
+
+#menuBar a:hover{
+	color: #d4f4fa;
+	border-bottom: 3px solid #f92a82;
+}
+
+#menuBar ul ul{
+	display: none;
+	
+ 	position: absolute;
+	background-color: #494948;
+}
+
+#menuBar ul li:hover ul{
+	display: block;
+}
+
+#menuBar ul ul li{
+	float: none;
+}
+
+</style>
+</head>
+<body>
+	<div id="menuBar">
+		<ul>
+			<li><a href="#">MOBILE</a></li>
+			<li><a href="#">TV&AUDIO</a>
+				<ul>
+					<li><a href="#">TVs</a></li>
+					<li><a href="#">Home Theater</a></li>
+					<li><a href="#">Headphones</a></li>
+					<li><a href="#">Wireless Speakers</a></li>
+				</ul>
+			</li>
+			<li><a href="#">COMPUTER</a>
+				<ul>
+					<li><a href="#">Laptops</a></li>
+					<li><a href="#">Desktps</a></li>
+					<li><a href="#">Tablets</a></li>
+					<li><a href="#">Printers</a></li>
+					<li><a href="#">Monitors</a></li>
+					<li><a href="#">Memory&Storage</a></li>
+				</ul>
+			</li>
+			<li><a href="#">SUPPORT</a></li>
+			<li><a href="#">BUSINESS</a></li>
+		</ul>
+	</div>
+
+</body>
+</html>
