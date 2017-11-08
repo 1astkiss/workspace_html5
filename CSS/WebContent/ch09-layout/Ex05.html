@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+.position1{
+	position: static;
+	background: lightgreen;
+}
+
+.position2{
+	position: relative;
+	background: lightpink;
+	left:20px;
+	top:10px;
+}
+
+
+.position3{
+	position: absolute;
+	background: lightblue;
+}
+
+.position4{
+	position: static;
+	background: lightseagreen;
+}
+</style>
+<script src="jquery-3.2.1.js"></script>
+
+<script>
+$(document).ready(function(){
+	
+alert($('.position3').css('top'));
+});
+</script>
+
+</head>
+<body>
+	<div class="position1">첫번째 박스</div>
+	<div class="position2">두번째 박스</div>
+	<div class="position3">세번째 박스</div>
+	<div class="position4">네번째 박스</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table{
+border:3px solid gray;
+}
+
+table *{
+border:1px solid gray;
+}
+
+caption{
+border: none;
+	caption-side: top;
+	width: auto;
+	text-align: center;
+}
+
+table.tbl_se{
+border-collapse:separate;
+border-spacing:1pt;
+}
+table.tbl_co{
+border-spacing:20pt;
+border-collapse:collapse;
+}
+
+td{
+border: outset 10pt;
+}
+</style>
+</head>
+<body>
+	<table class="tbl_se">
+		<caption>테두리통합</caption>
+		<tr>
+			<th>제목1</th>
+			<td>셀1</td>
+			<td>셀2</td>
+		</tr>
+		<tr>
+			<th>제목2</th>
+			<td>셀3</td>
+			<td>셀4</td>
+		</tr>
+		<tr>
+			<th>제목3</th>
+			<td>셀5</td>
+			<td>셀6</td>
+		</tr>
+	</table>
+	<table class="tbl_co">
+		<caption>테두리분리</caption>
+		<tr>
+			<th>제목1</th>
+			<td>셀1</td>
+			<td>셀2</td>
+		</tr>
+		<tr>
+			<th>제목2</th>
+			<td>셀3</td>
+			<td>셀4</td>
+		</tr>
+		<tr>
+			<th>제목3</th>
+			<td>셀5</td>
+			<td>셀6</td>
+		</tr>
+	</table>
+
+</body>
+</html>
