@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+label {
+	width: 150px;
+	/*  	float: left;
+ */
+}
+</style>
+
+</head>
+<body>
+	<form method="get" action="do.jsp">
+
+		<fieldset>
+			<legend>프로젝트 정보</legend>
+			<ul>
+				<li><label>이름</label> <input type="text" name="name" id="name" autofocus required>
+				</li>
+
+				<li><label>중요도</label> <input type="range" name="priority" id="priority" min="0"
+						max="10" value="5"
+					></li>
+				<li>
+				<label>예상시간</label>
+				<input type="number" name="estimated_hours" min="0" max="100" value="50">
+				</li>
+</ul>
+		</fieldset>
+
+
+
+	</form>
+
+</body>
+</html>

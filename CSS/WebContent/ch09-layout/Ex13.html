@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="jquery-3.2.1.js"></script> 
+<script>
+$(document).ready(function(){
+	
+alert($('.box_a').css('top'));
+});
+</script>
+<style type="text/css">
+
+div{
+	width: 100px;
+	height: 50px;
+
+}
+
+.box_a{
+	float: right;
+
+} 
+ .box_b{
+	float: left;
+}
+
+.box_c{
+/* 	margin: 0px auto;
+ */	width:20%;
+}
+</style>
+</head>
+<body>
+	<div class="box_a">박스1안에 있는 내용</div>
+	<div class="box_b">박스2안에 있는 내용</div>
+	<div class="box_c">박스3안에 있는 내용</div>
+	<div class="box_d">박스4안에 있는 내용</div>
+
+</body>
+</html>

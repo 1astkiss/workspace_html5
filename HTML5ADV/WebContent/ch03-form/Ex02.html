@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+fieldset {
+	width: 216px;
+}
+
+fieldset ul {
+	list-style: none;
+	margin: 2px;
+	padding: 0;
+}
+
+fieldset ul li {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+fieldset input {
+	width: 150px;
+}
+</style>
+</head>
+<body>
+	<form method="post" action="do.jsp">
+		<fieldset>
+			<legend>새로운 계정 만들기</legend>
+			<ul>
+				<li><label>이름</label> <input type="text" name="name" id="name" autofocus
+						placeholder="이름 입력"
+					></li>
+				<li><label>이멜</label> <input type="email" name="email" id="email" autofocus
+						placeholder="xxx@xxx.xxx"
+					></li>
+				<li><label>비밀번호</label> <input type="password" name="password" id="password"
+						placeholder="8~16자 사이의 문자" autocomplete="off"
+					></li>
+			</ul>
+		</fieldset>
+	</form>
+</body>
+</html>
