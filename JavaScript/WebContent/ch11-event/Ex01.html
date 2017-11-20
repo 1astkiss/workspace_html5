@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload= function(){
+	document.getElementsByTagName('p')[0].addEventListener('click', changeText);
+};
+
+function changeText(){
+	this.innerHTML = "문자열 내용 변경";
+}
+
+</script>
+</head>
+<body>
+	<h1>이벤트 유형</h1>
+	<p>여기를 클릭해 보세요!</p>
+
+</body>
+</html>

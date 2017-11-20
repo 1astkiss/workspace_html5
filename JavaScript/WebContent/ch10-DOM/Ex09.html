@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>속성 이름을 이용한 속성값 변경하기</h3>
+	<a id="link" href="http://www.naver.com">네이버로가기</a>
+
+	<br>
+	<br>
+	
+	<button onclick='changeLink()'>다음으로 가기로 바꾸기</button>
+
+</body>
+<script>
+	function changeLink(){
+		var link = document.getElementById('link');
+		link.href = 'http://daum.net';
+		link.innerHTML = '다음으로가기';
+	}
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+window.onload=function(){
+var request= new XMLHttpRequest();
+request.open('GET', 'test.jsp?callback=test', false);
+request.send();
+};
+
+window.test = function(input){
+	alert(input.data);
+	//document.body.innerHTML += input.data;
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>
