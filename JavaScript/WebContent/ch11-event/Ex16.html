@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function test1(v){
+		if(v.value == ""){
+			v.value = 'bb';
+		}
+		
+		for(var key in v){
+			document.body.innerHTML +='<p>'+ key + ":" + event[key] + '</p>';
+		}
+	}
+	
+	function test2(v){
+		 if(v.value == v.defaultValue){
+			v.value = 'aa';
+		}
+	}
+	
+	
+</script>
+</head>
+<body>
+	<form action='myform'>
+		<textarea rows="10" cols="30" name="notice" onblur="test1(this)" onfocus="test2(this)">text goes away when clicked</textarea>
+	</form>
+</body>
+</html>

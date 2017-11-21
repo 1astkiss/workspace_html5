@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button id='btn'>click me</button>
+	<p id='text'>
+	
+	<script type="text/javascript">
+		var btn = document.getElementById('btn');
+		btn.addEventListener('click', clickBtn);
+		
+		function clickBtn(event){
+			document.getElementById('text').innerHTML =
+				"event type : " + event.type +"<br> event target : " + event.target;
+		}
+	</script>
+	
+</body>
+</html>

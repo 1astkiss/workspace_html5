@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>아래의 버튼에 마우스를 올리거나 클릭해 보세요</p>
+	<button id="btn">이벤트 삭제 버튼</button>
+	<p id="text"></p>
+	
+	<script type="text/javascript">
+	var btn = document.getElementById("btn");
+	
+	btn.addEventListener('click', clickBtn);
+	btn.addEventListener('mouseover', mouseBtn);
+	btn.addEventListener('mouseover', mouseoutBtn);
+	btn.addEventListener('mouseout', mouseoutBtn);
+
+	
+	function clickBtn(){
+		btn.removEventListener('mouseover', mouseBtn);
+		document.getElementById('text').innerHTML += 'event removed<br>';
+	}
+	function mouseBtn(){
+		document.getElementById('text').innerHTML += 'mouse on button<br>';
+	}
+	function mouseoutBtn(){
+		document.getElementById('text').innerHTML += 'mouse out of button<br>';
+	}
+	
+	</script>
+
+</body>
+</html>

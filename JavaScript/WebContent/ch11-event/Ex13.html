@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(){
+		var header = document.getElementById('header');
+		
+		header.onclick = function(){
+			alert('click1');
+			header.innerHTML = "좋은 생각";
+		}
+		header.onclick = function(){
+			alert('click2');
+			header.innerHTML = "좋은 생각2";
+		}
+		
+		//header.onclick = null;
+	};
+
+</script>
+</head>
+<body>
+	<div id="header">클릭</div>
+
+</body>
+</html>

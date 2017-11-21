@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.onload = function(e){
+		
+		for(var key in e){
+			document.body.innerHTML +='<p>'+ key + ":" + event[key] + '</p>';
+		}
+		
+		document.body.onclick = function(e){
+				document.body.innerHTML += "*** from onclick <br>";
+				
+				for(var key in e){
+					document.body.innerHTML +='<p>'+ key + ":" + event[key] + '</p>';
+				}
+		};
+	};
+</script>
+</head>
+<body>
+	<h1>click</h1>
+	
+</body>
+</html>

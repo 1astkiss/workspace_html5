@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	var aa = function(){
+		alert('click');
+	};
+	
+	var bb = function(){
+		var header = document.getElementById('header');
+		header.addEventListener('click', aa , false);
+	};
+
+	window.addEventListener('load', bb, false);
+	
+</script>
+</head>
+<body>
+	<h1 id="header">Header Click</h1>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+table, th, td{
+border: 1px solid blue;
+border-collapse: collapse;
+}
+</style>
+<script type="text/javascript">
+	function loadDoc(){
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.onreadystatechange = function(){
+			if(this.status == 200 & this.readyState == this.DONE){
+				displayData(xmlHttp);
+			}
+		};
+		
+		xmlHttp.open("GET", 'korean_cities.xml', true);
+		xmlHttp.send();
+		
+	}
+	
+	function displayData(xmlHttp){
+		var xmlObj, cityList, result, idx;
+		xmlObj = xmlHttp.responseXML;
+		
+		cityList = xmlObj.getElementsByTagName("city");
+		
+		result = "<table><tr><th>도시이름</th><th>행정구역</th></tr>";
+		for(idx=0; idx < cityList.length;idx++){
+			result += "<tr><td>";
+			result += cityList[idx].getElementsByTagName('name')[0].childNodes[0].nodeValue;				
+			result += "</td><td>";
+			result += cityList[idx].getElementsByTagName('class')[0].childNodes[0].nodeValue;;				
+			result += "</td></tr>";
+		}
+		
+		result += "</table>";
+	
+		document.getElementById("text").innerHTML = result;
+	}
+	
+	
+
+
+</script>
+</head>
+<body>
+	<button onclick="loadDoc()">XML 데이터 출력하기</button>
+	<p id="text"></p>
+</body>
+</html>
